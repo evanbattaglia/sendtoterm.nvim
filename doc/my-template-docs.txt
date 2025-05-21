@@ -1,5 +1,7 @@
 *my-template-docs.txt*     For Neovim >= 0.8.0    Last change: 2024 January 18
 
+TODO -- this is a template, need to generate from readme
+
 ==============================================================================
 Table of Contents                         *my-template-docs-table-of-contents*
 
