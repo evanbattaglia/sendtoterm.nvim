@@ -20,7 +20,7 @@ M.get_visual_selection = function()
   return table.concat(lines, "\n")
 end
 
-M.get_visual_selection_unless_first_and_last_lines = function(line_start, line_end) 
+M.get_visual_selection_unless_first_and_last_lines = function(line_start, line_end)
   if line_start == 1 and line_end == vim.fn.line("$") then
     -- TODO: if in visual selection by character mode and the first and last
     -- lines are selected (but not all characters), then should return get_visual_selection().
