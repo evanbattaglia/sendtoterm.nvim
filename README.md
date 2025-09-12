@@ -42,11 +42,8 @@ Example usages:
 Demo 1: send whole file to zellij pane with :%Sendtoterm
 ![demo 1](https://github.com/evanbattaglia/sendtoterm.nvim/blob/assets/images/demo1.gif?raw=true)
 
-Demo 2: using a macro to send text in between \`\`\` to zellij pane
-![demo 2](https://github.com/evanbattaglia/sendtoterm.nvim/blob/assets/images/demo2.gif?raw=true)
-
-Demo 3: send line to multiple neovim terminals
-![demo 3](https://github.com/evanbattaglia/sendtoterm.nvim/blob/assets/images/demo3.gif?raw=true)
+Demo 2: send line to multiple neovim terminals
+![demo 2](https://github.com/evanbattaglia/sendtoterm.nvim/blob/assets/images/demo3.gif?raw=true)
 
 
 ## Plugin development
