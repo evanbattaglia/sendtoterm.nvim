@@ -7,7 +7,16 @@ M.term_job_ids = {}
 
 ---@return string
 M.send_to_zellij_pane = function(text, next_or_prev)
-  vim.fn.system("zellij-send-to-" .. next_or_prev .. " " .. vim.fn.shellescape(text))
+  local escaped = vim.fn.shellescape(text)
+  if next_or_prev == "next" then
+    vim.fn.system(
+      "zellij action focus-next-pane && zellij action write-chars " .. escaped .. " && zellij action focus-previous-pane"
+    )
+  else
+    vim.fn.system(
+      "zellij action focus-previous-pane && zellij action write-chars " .. escaped .. " && zellij action focus-next-pane"
+    )
+  end
 end
 
 M.send_to_term_or_zellij_pane = function(text)
